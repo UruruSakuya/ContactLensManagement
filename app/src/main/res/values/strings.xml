@@ -9,9 +9,12 @@
     <string name="next_level">Next Level</string>
     <string name="hint_add_contact_name">Input Contact Lens Name</string>
     <string name="button_add">Add</string>
+
+    <string name="info_success_adding_master">Adding master data Successful.</string>
+
     <!-- -
         This is an ad unit ID for an interstitial test ad. Replace with your own interstitial ad unit id.
         For more information, see https://support.google.com/admob/answer/3052638
     <!- -->
-    <string name="interstitial_ad_unit_id">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="interstitial_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
 </resources>
