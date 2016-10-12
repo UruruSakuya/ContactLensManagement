@@ -3,9 +3,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="jp.co.ur.nao.contactlensmanagement.MainActivity">
     <item
-        android:id="@+id/action_adding"
+        android:id="@+id/action_adding_contact_master"
         android:orderInCategory="100"
-        android:title="@string/action_adding"
-        app:showAsAction="never"
-        android:onClick="addContact" />
+        android:title="@string/action_adding_contact_master"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_adding_limit_master"
+        android:orderInCategory="100"
+        android:title="@string/action_adding_limit_master"
+        app:showAsAction="never" />
 </menu>
