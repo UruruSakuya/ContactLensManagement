@@ -12,6 +12,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.text.format.DateFormat;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 
@@ -36,7 +38,26 @@ public class MainActivity extends AppCompatActivity {
             textView.setText(cursor.getString(0));
         }
 
+//        if (getCurrentInformationDate(L))
+//        set Date
+//        else
+        LinearLayout leftLayout = (LinearLayout) findViewById(R.id.left_layout);
+        leftLayout.removeAllViews();
 
+        Button contactLeftBegin = new Button(this);
+        contactLeftBegin.setText("begin!");
+        leftLayout.addView(contactLeftBegin);
+
+
+//        if (isUsing(R))
+//        set Date
+//        else
+        LinearLayout rightLayout = (LinearLayout) findViewById(R.id.right_layout);
+        rightLayout.removeAllViews();
+
+        Button contactRightBegin = new Button(this);
+        contactRightBegin.setText("begin!");
+        rightLayout.addView(contactRightBegin);
 
         AdView adview = (AdView) findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

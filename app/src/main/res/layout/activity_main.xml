@@ -14,8 +14,6 @@
         android:layout_weight="9"
         android:orientation="horizontal">
 
-        <!-- view for AdMob Interstitial Ad -->
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -29,51 +27,58 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:layout_weight="0.25"
                 android:gravity="center_vertical"
                 android:text="@string/left_eye"
                 android:textAlignment="center"
                 android:textSize="30sp" />
 
-            <TextView
-                android:id="@+id/label_left_remain"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.05"
-                android:text="@string/remaining_date" />
-
-            <TextView
-                android:id="@+id/value_left_remain"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_weight="0.25"
-                android:text="@string/nothing"
-                android:textSize="45sp" />
-
-            <TextView
-                android:id="@+id/textView8"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.05"
-                android:text="@string/end_date" />
-
-            <TextView
-                android:id="@+id/value_left_end"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_weight="0.25"
-                android:text="@string/nothing"
-                android:textSize="45sp" />
-
-            <Button
-                android:id="@+id/button_left_end"
+            <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_weight="0.10"
-                android:text="@string/finish_left_contact_lens" />
+                android:layout_height="match_parent"
+                android:id="@+id/left_layout"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/label_left_remain"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.05"
+                    android:text="@string/remaining_date" />
+
+                <TextView
+                    android:id="@+id/value_left_remain"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="0.25"
+                    android:text="@string/nothing"
+                    android:textSize="45sp" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.05"
+                    android:text="@string/end_date" />
+
+                <TextView
+                    android:id="@+id/value_left_end"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="0.25"
+                    android:text="@string/nothing"
+                    android:textSize="45sp" />
+
+                <Button
+                    android:id="@+id/button_left_end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="0.10"
+                    android:text="@string/finish_left_contact_lens" />
+
+            </LinearLayout>
 
         </LinearLayout>
 
@@ -90,51 +95,57 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:layout_weight="0.25"
                 android:gravity="center_vertical"
                 android:text="@string/right_eye"
                 android:textAlignment="center"
                 android:textSize="30sp" />
 
-            <TextView
-                android:id="@+id/textView9"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.05"
-                android:text="@string/remaining_date" />
-
-            <TextView
-                android:id="@+id/value_right_remain"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_weight="0.25"
-                android:text="@string/nothing"
-                android:textSize="45sp" />
-
-            <TextView
-                android:id="@+id/textView10"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.05"
-                android:text="@string/end_date" />
-
-            <TextView
-                android:id="@+id/value_right_end"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_weight="0.25"
-                android:text="@string/nothing"
-                android:textSize="45sp" />
-
-            <Button
-                android:id="@+id/button_right_end"
+            <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_weight="0.10"
-                android:text="@string/button_finish_right_contact_lens" />
+                android:layout_height="match_parent"
+                android:id="@+id/right_layout"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.05"
+                    android:text="@string/remaining_date" />
+
+                <TextView
+                    android:id="@+id/value_right_remain"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="0.25"
+                    android:text="@string/nothing"
+                    android:textSize="45sp" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.05"
+                    android:text="@string/end_date" />
+
+                <TextView
+                    android:id="@+id/value_right_end"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="0.25"
+                    android:text="@string/nothing"
+                    android:textSize="45sp" />
+
+                <Button
+                    android:id="@+id/button_right_end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="0.10"
+                    android:text="@string/button_finish_right_contact_lens" />
+            </LinearLayout>
         </LinearLayout>
     </LinearLayout>
 
